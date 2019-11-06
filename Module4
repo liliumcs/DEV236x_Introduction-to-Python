@@ -1,2 +1,0 @@
-string='The new line character is "\\n"'
-print(string)
