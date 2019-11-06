@@ -1,0 +1,10 @@
+# [ ] create a math quiz question and ask for the solution until the input is correct
+quiz=print("please answer this question:")
+solution="a"
+while True:
+    answer=input("please choose one answer:")
+    if answer==solution:
+        print("Correct!")
+        break
+    else:
+        print("Wrong, keep answering")
