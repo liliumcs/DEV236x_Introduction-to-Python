@@ -1,0 +1,91 @@
+def rainbow_or_age(argu):
+    if argu.isdigit():
+        return int(age_20(argu))
+    else:
+        return False
+check=input("please inter an argu:")
+rainbow_or_age(check)
+
+
+
+def age_20(age):
+    if float(age)>20:
+        return (float(age)-20)
+your_age=input("please enter your age:")
+
+print(age_20(your_age),"years old, 20 years difference from now")
+
+
+
+about_pet=input("please describe your pet with a sentence:")
+
+if "dog"in about_pet.lower():
+    print("Ah, a dog")
+elif "cat" in about_pet.lower():
+    print("Ah, a cat")
+elif "rubby" in about_pet.lower():
+    print("Ah, a rubby")
+
+print("Thank you for your story")
+
+
+
+def check_guess(letter, guess):
+    if not guess.isalpha():
+        print("invaild")
+        return False
+
+    elif guess.lower()>letter.lower():
+        print("letter is lower!")
+        return False
+    elif guess.lower()<letter.lower():
+        print("letter is higher!")
+        return False
+    else:
+        print("Correct!")
+        return True
+letter_input=input("enter a letter:")
+guess_input=input("enter your guess:")
+
+check_guess(letter_input,guess_input)
+
+
+def check_guess(letter, guess):
+    if not guess.isalpha():
+        print("invaild")
+        return False
+
+    elif guess.lower()>letter.lower():
+        print("letter is lower!")
+        return False
+    elif guess.lower()<letter.lower():
+        print("letter is higher!")
+        return False
+    else:
+        print("Correct!")
+        return True
+letter_input=input("enter a letter:")
+guess_input=input("enter your guess:")
+
+print(check_guess(letter_input,guess_input)) 
+
+
+
+def multiply():
+    num1=int(input("Please enter the first number= "))
+    num2=int(input("Please enter the second number= "))
+    operator=input("Please enter the operator to be used= ")
+    if operator=="*":
+        print("The multiplication of",num1,"&",num2,"is:",str(num1*num2))
+        return
+    elif operator=="/":
+        print("The division of",num1,"by",num2,"is:",str(num1/num2))
+        return
+    else:
+        print("Invalid Operator")
+        return
+
+multiply()
+
+
+
