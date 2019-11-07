@@ -1,0 +1,39 @@
+Program: Allergy Check
+[ ] get user input for categories of food eaten in the last 24 hours
+save in a variable called input_test
+example input 01 02 practice Allergy-input
+
+[ ] print True if "dairy" is in the input_test string
+[ ] Test the code so far
+[ ] modify the print statement to output similar to below
+example output 01 02 Allergy output
+Test the code so far trying input including the string "dairy" and without
+[ ] repeat the process checking the input for "nuts", challenge add "Seafood" and "chocolate"
+[ ] Test your code
+[ ] challenge: make your code work for input regardless of case, e.g. - print True for "Nuts", "NuTs", "NUTS" or "nuts"
+
+# Create Allergy check code
+# then PASTE THIS CODE into edX
+
+# [ ] get input for input_test variable
+
+
+# [ ] print "True" message if "dairy" is in the input or False message if not
+
+
+# [ ] print True message if "nuts" is in the input or False if not
+
+
+# [ ] Challenge: Check if "seafood" is in the input - print message
+
+
+# [ ] Challenge: Check if "chocolate" is in the input - print message
+
+
+# Allergy Check
+input_test=input("enter categories of food eaten in the last 24hrs: ")
+print("dairy".lower()in input_test.lower())
+print('It is',"dairy".lower()in input_test.lower(), 'that','"',input_test,'"','"contains "dairy"')
+print('It is',"nuts".lower()in input_test.lower(), 'that','"',input_test,'"','"contains "nuts"')
+print('It is',"Seafood".lower()in input_test.lower(), 'that','"',input_test,'"','"contains "Seafood"')
+print('It is',"chocolate".lower()in input_test.lower(), 'that','"',input_test,'"','"contains "chocolate"')
