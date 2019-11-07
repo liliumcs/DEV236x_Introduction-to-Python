@@ -1,0 +1,20 @@
+Program: fishstore()
+create and test fishstore()
+
+fishstore() takes 2 string arguments: fish & price
+fishstore returns a string in sentence form
+gather input for fish_entry and price_entry to use in calling fishstore()
+print the return value of fishstore()
+example of output: Fish Type: Guppy costs $1
+
+# [ ] create, call and test fishstore() function 
+# then PASTE THIS CODE into edX
+
+
+# Program:Fishstore()
+def fishstore(fish,price):
+    fish_price= (fish+ " costs "+"$"+price)
+    return fish_price
+fish_entry=input("Enter fish name:")
+price_entry=input("Enter fish price(no symbols):")
+print("Fish Type:",fishstore(fish_entry,price_entry))
