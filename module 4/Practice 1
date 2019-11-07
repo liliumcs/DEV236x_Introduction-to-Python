@@ -1,0 +1,160 @@
+Tasks
+# [ ] print a string that outputs the following exactly: The new line character is "\n"
+
+
+# [ ] print output that is exactly (with quotes): "That's how we escape!"
+
+
+# [ ] with only 1 print statement and using No Space Characters, output the text commented below  
+
+# 1       one
+# 22      two
+# 333     three
+
+
+Program: quote_me() Function
+quote_me takes a string argument and returns a string that will display surrounded with added double quotes if printed
+
+check if passed string starts with a double quote ("\""), then surround string with single quotations
+if the passed string starts with single quote, or if doesn't start with a quotation mark, then surround with double quotations
+Test the function code passing string input as the argument to quote_me()
+
+# [ ] create and test quote_me()
+
+
+
+Program: shirt order
+First get input for color and size
+
+White has sizes L, M
+Blue has sizes M, S
+print avaiable or unavailable, then
+print the order confirmation of color and size
+
+* hint: set a variable "available = False" before nested if statements and
+change to True if color and size are avaiable*
+
+# [ ] create shirt order using nested if 
+
+
+Program: str_analysis() Function
+Create the str_analysis() function that takes a string argument. In the body of the function:
+
+Check if string is digits
+if digits: convert to int and check if greater than 99
+if greater than 99 print a message about a "big number"
+if not greater than 99 print message about small number
+if not digits: check if string isalpha
+if isalpha print message about being all alpha
+if not isalpha print a message about being neither all alpha nor all digit
+call the function with a string from user input
+
+# [ ] create and test str_analysis()
+
+
+Program: ticket_check() - finds out if a seat is avaiable
+Call ticket_check() function with 2 arguments: section and seats requested and return True or False
+
+section is a string and expects: general, floor
+seats is an integer and expects: 1 - 10
+Check for valid section and seats
+
+if section is general (or use startswith "g")
+if seats is 1-10 return True
+if section is floor (or use starts with "f")
+if seats is 1-4 return True
+otherwise return False
+
+# [ ] create and call ticket_check()
+
+
+string='The new line character is "\\n"'
+print(string)
+
+print('\"That\'s how we escape!\"')
+
+print ('The new line character is "\\n"')
+
+# [ ] with only 1 print statement and using No Space Characters, output the text commented below  
+
+# 1       one
+# 22      two
+# 333     three
+
+print("1\t\tone\n22\t\ttwo\n333\t\tthree")
+
+
+
+# [ ] create and test quote_me()
+
+def addstring(a, b, c):
+   return (a + b + c)
+
+
+def quote_me(string):
+    if string.startswith('\"'):
+        return addstring("\'", string ,"\'")
+    else:
+        return addstring('\"',  string, '\"')
+
+string_input=input("please input the word:")
+print(quote_me(string_input))
+    
+
+
+# [ ] create shirt order using nested if 
+color=input("please enter the shirt color:")
+size=input("please enter the size:")
+if color.lower()=="white":
+    if size.lower()in"l,m":
+        print("Available")
+        print("the order confirmation is:",color, size)
+    else:
+        print("unavailable")
+elif color.lower()=="blue":
+            if size.lower()in"m,s":
+                print("Availabe")
+                print("the order confirmation is:", color, size)
+            else:
+                print("unavailable")
+else:
+    print("unvailable")
+    
+    
+    
+# [ ] create and test str_analysis()
+def str_analysis(string):
+    if string.isdigit()==True:
+        if int(string)>99:
+            print("big number")
+        else:
+            print("small number")
+    elif string.isalpha()==True:
+        print("all alpha")
+    else:
+        print("neither all alpha nor all digit")
+
+collection=input("please enter something:")
+str_analysis(collection)
+    
+    # [ ] create and call ticket_check()
+def ticket_check(section, seats):
+    if section.lower()=="general":
+        if int(seats)>=1 and int(seats)<=10:
+            return True
+        else:
+            return False
+    elif section.lower()=="floor":
+        if int(seats)>=1 and int(seats) <=4:
+            return True
+        else:
+            return False
+    else:
+        return False
+
+section_wanted=input("please choose general or floor:")
+seats_wanted=input("please enter a number:")
+
+ticket_check(section_wanted,seats_wanted)
+
+
