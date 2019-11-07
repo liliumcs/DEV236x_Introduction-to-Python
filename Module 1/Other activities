@@ -1,0 +1,57 @@
+def make_doctor():
+
+    full_name=input("What is your mane?: ")
+
+    return full_name
+
+name="Dr. "+make_doctor()
+
+print(name)
+
+def make_doctor(name):
+      ext_name = "Dr. "+name
+      return ext_name
+full_name=input("What is your name?")
+
+print(make_doctor(full_name))
+
+
+
+
+def make_schedule(period1, period2):
+    schedule = ("[1st] " + period1.title() + ", [2nd] " + period2.title())
+    return schedule
+
+student_schedule = make_schedule("mathematics", "history")
+print("SCHEDULE:", student_schedule)
+
+
+
+def make_schedule(period1, period2, period3):
+    schedule = ("[1st] " + period1.title() + ", [2nd] " + period2.title()+",[3rd]"+ period3.title())
+    return schedule
+
+student_schedule = make_schedule("mathematics", "history","science")
+print("SCHEDULE:", student_schedule)
+
+
+def hat_available(color):
+    hat_colors = 'black, red, blue, green, white, grey, brown, pink'
+    return(color.lower() in hat_colors)
+have_hat = hat_available('green')  
+  
+print('hat available is', have_hat)
+
+def bird_available(bird_name):
+    bird_types = 'crow robin parrot eagle sandpiper hawk pigeon'
+    return(bird_name.lower()in bird_types)
+bird_checked=input("Enter a type bird to search:")
+print(bird_checked +  ' availability is ', bird_available(bird_checked))
+
+
+def how_many():
+    requested = input("enter how many you want: ")
+    return requested
+number_needed=how_many()
+print(number_needed,"will be ordered")
+
